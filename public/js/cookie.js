@@ -69,7 +69,7 @@
   newcookiebar.appendChild(newtxtbarcookie);
   let aun = document.createElement('a');
   aun.setAttribute("id", "cookies");
-  a.setAttribute("href", policyurl)
+  aun.setAttribute("href", policyurl)
   aun.setAttribute("style", linkcolor);
   let adeux = document.createElement('a');
   adeux.setAttribute("id", "cookie-policy");

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Mes Premiers JS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/x-icon" href="public/img/ptitspoid.png">
+  <script src="https://kit.fontawesome.com/39dc1c214a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="public/css/main.css">
+  <style>
+    a {
+      color: black;
+    }
+
+    a:visited {
+      text-decoration: none;
+    }
+
+    #top h1 {
+      font-family: "GS";
+      color: #0faec4;
+      text-shadow: -1px -1px 0em #a0e09f, 1px -1px 0em #a0e09f,
+      1px 1px 0em #a0e09f, -1px -1px 0.5em #a0e09f,
+      1px -1px 0.5em #a0e09f, 1px 1px 0.5em #a0e09f;
+    }
+
+    .w3-bar,
+    h1,
+    button {
+      font-family: "RM"
+    }
+
+    #notaBene h1 {
+      font-family: "HP";
+    }
+
+    #chrono, #exTipingMachin,
+    #scroll, #clicksSourceCode,
+    #cookie {
+      font-size: 200px
+    }
+
+    #chrono .text-deep-purple:hover,
+    #scroll .text-deep-purple:hover,
+    #cookie .text-deep-purple:hover {
+      text-shadow: -1px -1px 0em #a0e09f, 1px -1px 0em #a0e09f,
+      1px 1px 0em #a0e09f, -1px -1px 0.5em #a0e09f, 1px -1px 0.5em #a0e09f,
+      1px 1px 0.5em #a0e09f;
+    }
+
+    #exTipingMachin .text-teal-light:hover,
+    #clicksSourceCode:hover {
+      color: #3fbbaf !important;
+      text-shadow: -1px -1px 0em #ad90d0, 1px -1px 0em #ad90d0,
+      1px 1px 0em #ad90d0, -1px -1px 0.5em #ad90d0, 1px -1px 0.5em #ad90d0,
+      1px 1px 0.5em #ffffff
+    }
+  </style>
+  <!-- Script appelant le timer -->
+  <script src='public/js/timer.js' async></script>
+  <!-- Script appelant l'espion au scroll -->
+  <script src="public/js/spy.js" async></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="top">
+    <div class="bar teal card align-left large">
+
+      <a id="little-menu"
+        class="bar-item button hide-medium hide-large right padding-large hover-white large deep-purple"
+        href="javascript:void(0);" onclick="littleMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a id="btntop" href="#top" class="bar-item button padding-large transparent">Home</a>
+      <a href="#section1" class="bar-item button hide-small padding-large hover-white"><i class="far fa-clock"></i></a>
+      <a href="#section2" class="bar-item button hide-small padding-large hover-white"><i
+          class="far fa-keyboard"></i></a>
+      <a href="#section3" class="bar-item button hide-small padding-large hover-white"><i
+          class="fas fa-arrows-alt-v"></i></a>
+      <a href="#section4" class="bar-item button hide-small padding-large hover-white"><i
+          class="fas fa-terminal"></i></a>
+      <a href="#section5" class="bar-item button hide-small padding-large hover-white"><i class="fas fa-cookie"></i></a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="littleBtn" class="bar-block white hidden hide-large hide-medium large right center">
+      <a href="#section1" class="bar-item button padding-large"><i class="far fa-clock"></i></a>
+      <a href="#section2" class="bar-item button padding-large"><i class="far fa-keyboard"></i></a>
+      <a href="#section3" class="bar-item button padding-large"><i class="fas fa-arrows-alt-v"></i></a>
+      <a href="#section4" class="bar-item button padding-large"><i class="fas fa-terminal"></i></a>
+      <a href="#section5" class="bar-item button padding-large"><i class="fas fa-cookie"></i></a>
+    </div>
+
+  </div>
+
+  <!-- Header -->
+  <header id="top" class="container deep-purple center" style="padding:128px 16px" data-spy>
+    <h1 class="margin jumbo">Mes Premiers JS</h1>
+  </header>
+  <hr id="deux" class="hidden">
+  <!-- 1 timer -->
+  <div id="section1" class="row-padding teal padding-64 container" data-spy>
+    <div class="content">
+      <div class="twothird">
+        <h1>Un timer.</h1>
+        <h5 class="padding-32">
+          <div><span id="time" style="white-space: pre-line" class="hidden"><br><br><br></span></div>
+        </h5>
+
+        <p>En cliquant sur l'orloge* une timer de 2o minutes sera affiché et lancé.</p>
+      </div>
+
+      <div id="chrono" class="third center">
+        <i class="far fa-clock padding-64 text-deep-purple hover-txt-shadow aster-parent"><span
+            class="aster">*</span></i>
+      </div>
+    </div>
+  </div>
+  <!-- 2 TipingMachin -->
+  <div id="section2" class="row-padding deep-purple padding-64 container" data-spy>
+    <div class="content">
+      <div id="exTipingMachin" class="third center">
+        <i class="far fa-keyboard padding-64 text-teal-light hover-txt-shadow"></i>
+      </div>
+
+      <div class="twothird">
+        <h1>Machine a ecrire</h1>
+        <h5 id="exTxt" class="padding-32 hidden">Ce code est fait pour un texte simple sans balisage ou légé.<br>Il
+          ne peut pas contenir deux balisages consécutifs, par exemple pas de balisage d'element ouvarant et/ou fermant
+          et/ou orphelines à la suite.<br>Ou encore pour les caractères spécieaux tels que <br> &amp;<span>amp;</span>
+          comme vous le constatez l'esperluette bug.</h5>
+
+        <p class="text-grey-light">En cliquant sur le clavier cette foie-ci un texte va s'écrire lettre par lettre.</p>
+
+        <div id="exTipingMachin_fufu" class="third center displayN">
+          <i class="far fa-keyboard padding-64 text-teal-light hover-txt-shadow"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 3 scroll -->
+  <div id="section3" class="row-padding teal padding-64 container" data-spy>
+    <div class="content">
+      <div class="twothird">
+        <h1>Modif btn au scroll</h1>
+        <h5 class="padding-32">
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </h5>
+
+        <p>En cliquant sur les flèches le trait doit apparaitre.</p>
+      </div>
+
+      <div id="scroll" class="third center">
+        <i class="fas fa-arrows-alt-v padding-64 text-deep-purple hover-txt-shadow" onclick="hr()"></i>
+      </div>
+    </div>
+  </div>
+  <!-- 4 Source Code -->
+  <div id="section4" class="row-padding deep-purple padding-64 container" data-spy>
+    <div class="content">
+      <div class="third center">
+        <i id="clicksSourceCode" class="fas fa-terminal padding-64 text-teal-light hover-txt-shadow"></i>
+      </div>
+
+      <div class="twothird">
+        <h1>Code Source</h1>
+        <h5 class="padding-32">
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </h5>
+
+        <p>En cliquant sur le bouton le source code de la page HTML s'affiche.</p>
+
+      </div>
+
+      <div class="third center displayN">
+        <i id="clicksSourceCode_fufu" class="fas fa-terminal padding-64 text-teal-light hover-txt-shadow"></i>
+      </div>
+    </div>
+  </div>
+  <!-- 5 cookie -->
+  <div id="section5" class="row-padding teal padding-64 container" data-spy>
+    <div class="content">
+      <div class="twothird">
+        <h1>cookie</h1>
+        <h5 class="padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+        <p class="text-grey-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div id="cookie" class="third center">
+        <i class="fas fa-cookie-bite padding-64 text-deep-purple hover-txt-shadow"></i>
+      </div>
+    </div>
+  </div>
+  <!-- Nota Bene -->
+  <div id="notaBene" class="container black center opacity padding-64">
+    <h1 class="margin xlarge">NB: En cours de realisation</h1>
+  </div>
+  <!-- Footer -->
+  <footer id="footer" class="container padding-64 center opacity">
+    <div class="xlarge padding-32">
+      <a href="https://www.instagram.com/psychoactif_38/"><i class="fa fa-instagram hover-opacity"></i></a>
+      <a href="https://codepen.io/PsychoActiF"><i class="fab fa-codepen hover-opacity"></i></a>
+      <a href="https://jplemonias.github.io/moi/"><i class="fab fa-empire hover-opacity"></i></a>
+      <a href="https://jplemonias.github.io/moi/bientot.html"><i class="fa fa-snapchat hover-opacity"></i></a>
+      <a href="https://jplemonias.github.io/moi/bientot.html"><i class="fa fa-linkedin hover-opacity"></i></a>
+    </div>
+  </footer>
+  <!-- Barre des cookies si NoScript -->
+  <noscript>
+    <div id="noscript-bar">
+      <div style="width:15%;">
+        <a href="https://enable-javascript.com/fr/" target="_blank">
+          <span id="activScript">
+            activer
+            <img id="svgNoScript" src="public/img/js-brands.svg"></img>
+          </span>
+        </a>
+      </div>
+      <div style="width:15%;">
+        <span id="agreeNoScript">
+          Ok
+        </span>
+      </div>
+      <div id="txtbarcookie">
+        Ce site web utilise une carte des cookie disponible <a id="linkNoScript">IcI </a><br>
+        Vous utilisez surement un addon bloquant les scripts, ou via votre navigateur.
+      </div>
+    </div>
+  </noscript>
+
+</body>
+
+<!-- Script -->
+<script>
+  function hr() {
+    document.querySelector("#deux").classList.toggle("hidden")
+  }
+
+  function littleMenu() {
+    document.querySelector("#littleBtn").classList.toggle("hidden")
+    var x = document.getElementById("littleBtn");
+    if (x.className.indexOf("show") == -1) {
+      x.className += " show";
+    } else {
+      x.className = x.className.replace(" show", "");
+    }
+  }
+
+  (function () {
+    var littleMenu = document.querySelector("#little-menu")
+    var style = "width: calc(" + document.querySelector("#littleBtn").firstElementChild.clientWidth + "px + 23px);"
+    littleMenu.setAttribute("style", style);
+  })();
+</script>
+<script>
+  window.onresize = resieztop
+  window.onload = resieztop
+
+  function resieztop() {
+    if (window.innerWidth <= 600) {
+      document.querySelector("#btntop").innerHTML = '<i class="fas fa-long-arrow-alt-up"></i>'
+    }
+    else {
+      document.querySelector("#btntop").innerHTML = '<i class="fas fa-home"></i>'
+      console.log(document.querySelectorAll(".displayN"));
+    }
+  }
+</script>
+<!-- Script appelant le Code Souce -->
+<script src="public/js/btncodesrc.js" async></script>
+<!-- Script appelant les cookies -->
+<script src="public/js/cookie.js" async></script>
+<!-- Script appelant les cookies -->
+<script src="public/js/MachinTipingEx.js" async></script>
+
+</html>

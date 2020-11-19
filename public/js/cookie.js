@@ -60,8 +60,6 @@
   newcookiebar.appendChild(newclickhere);
   document.querySelector("#clickhere").innerHTML = "Clique ICI" + "\n";
 
-
-
   //------------------------Txt Bar Cookie
   let newtxtbarcookie = document.createElement('div');
   newtxtbarcookie.setAttribute("id", "txtbarcookie");

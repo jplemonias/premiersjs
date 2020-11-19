@@ -21,7 +21,7 @@ function machinetypingEx() {
         tableTexte.push(spaned[i].innerHTML);
     };
     function intervalLettreEx() {
-        intunesec = setInterval(ecriture, 5);
+        intunesec = setInterval(ecriture, 35);
     };
     var x = 0;
     function ecriture() {

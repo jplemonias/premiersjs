@@ -32,9 +32,9 @@
   newcookiebar.setAttribute("class", hidden);
   document.body.appendChild(newcookiebar);
   let newqprcUn = document.createElement('div');
-  newqprcUn.setAttribute("style", divquinzep);//45
+  newqprcUn.setAttribute("style", divquinzep);
   let newqprcDeux = document.createElement('div');
-  newqprcDeux.setAttribute("style", divquinzep);//46
+  newqprcDeux.setAttribute("style", divquinzep);
   let cook = document.createElement('span');
   cook.setAttribute("id", "cook");
   cook.setAttribute("style", btn + btncolor + pointeur + "left:0; border-radius: 0 0 6px 0;");
@@ -74,14 +74,14 @@
   let adeux = document.createElement('a');
   adeux.setAttribute("id", "cookie-policy");
   adeux.setAttribute("href", policyurl);
-  adeux.setAttribute("style", linkcolor + " " + pointeur);
-  newtxtbarcookie.append("Ce site web utilise une carte des cookie disponible " + "\n");
+  adeux.setAttribute("style", linkcolor);
+  newtxtbarcookie.append("Ce site web utilise une carte des cookie disponible ");
   newtxtbarcookie.appendChild(aun);
-  newtxtbarcookie.append("affin de vous offir une selection à votre gout ( au beur salé ou encore chocolat blanc ... ) " + "\n");
+  newtxtbarcookie.append(" affin de vous offir une selection à votre gout ( au beur salé ou encore chocolat blanc ... ) ");
   newtxtbarcookie.appendChild(adeux);
   newtxtbarcookie.append(".\n");
-  document.querySelector("#cookies").innerHTML = "IcI " + "\n";
-  document.querySelector("#cookie-policy").innerHTML = "Consulter notre politique des cookies" + "\n";
+  document.querySelector("#cookies").innerHTML = "IcI";
+  document.querySelector("#cookie-policy").innerHTML = "Consulter notre politique des cookies";
 
   //document.write("<span id='checkcookies' " + hidden + " style='" + scheck + " " + btncolor + " " + pointeur + "'>cookies</span>");
   //------------------------Check Cookie

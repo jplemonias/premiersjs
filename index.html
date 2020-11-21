@@ -57,6 +57,9 @@
       1px 1px 0em #ad90d0, -1px -1px 0.5em #ad90d0, 1px -1px 0.5em #ad90d0,
       1px 1px 0.5em #ffffff
     }
+    /*#littleBtn {
+      border: solid 1px transparent;
+    }*/
   </style>
   <!-- Script appelant le timer -->
   <script src='public/js/timer.js' async></script>
@@ -84,7 +87,7 @@
     </div>
 
     <!-- Navbar on small screens -->
-    <div id="littleBtn" class="bar-block white hidden hide-large hide-medium large right center">
+    <div id="littleBtn" class="bar-block white hide-large large right center hidden">
       <a href="#section1" class="bar-item button padding-large"><i class="far fa-clock"></i></a>
       <a href="#section2" class="bar-item button padding-large"><i class="far fa-keyboard"></i></a>
       <a href="#section3" class="bar-item button padding-large"><i class="fas fa-arrows-alt-v"></i></a>
@@ -103,7 +106,7 @@
   <div id="section1" class="row-padding teal padding-64 container" data-spy>
     <div class="content">
       <div class="twothird">
-        <h1>Un timer.</h1>
+        <h1>Un timer</h1>
         <h5 class="padding-32">
           <div><span id="time" style="white-space: pre-line" class="hidden"><br><br><br></span></div>
         </h5>
@@ -242,48 +245,13 @@
   </noscript>
 
 </body>
-
-<!-- Script -->
-<script>
-  function hr() {
-    document.querySelector("#deux").classList.toggle("hidden")
-  }
-
-  function littleMenu() {
-    document.querySelector("#littleBtn").classList.toggle("hidden")
-    var x = document.getElementById("littleBtn");
-    if (x.className.indexOf("show") == -1) {
-      x.className += " show";
-    } else {
-      x.className = x.className.replace(" show", "");
-    }
-  }
-
-  (function () {
-    var littleMenu = document.querySelector("#little-menu")
-    var style = "width: calc(" + document.querySelector("#littleBtn").firstElementChild.clientWidth + "px + 23px);"
-    littleMenu.setAttribute("style", style);
-  })();
-</script>
-<script>
-  window.onresize = resieztop
-  window.onload = resieztop
-
-  function resieztop() {
-    if (window.innerWidth <= 600) {
-      document.querySelector("#btntop").innerHTML = '<i class="fas fa-long-arrow-alt-up"></i>'
-    }
-    else {
-      document.querySelector("#btntop").innerHTML = '<i class="fas fa-home"></i>'
-      console.log(document.querySelectorAll(".displayN"));
-    }
-  }
-</script>
 <!-- Script appelant le Code Souce -->
 <script src="public/js/btncodesrc.js" async></script>
 <!-- Script appelant les cookies -->
 <script src="public/js/cookie.js" async></script>
-<!-- Script appelant les cookies -->
+<!-- Script appelant l'exemple de la machine à écrire -->
 <script src="public/js/MachinTipingEx.js" async></script>
+<!-- Script appelant lesscripts principeaux -->
+<script src="public/js/main.js" async></script>
 
 </html>

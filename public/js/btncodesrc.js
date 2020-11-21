@@ -23,7 +23,7 @@ function coloriage() {
         const regex02 = new RegExp("link");
         const regex03 = new RegExp("script");
         const regex04 = new RegExp("style");
-        const regex05 = new RegExp("href")
+        const regex05 = new RegExp("href");
         const regex1 = new RegExp("\/\*\!");
         const tab = "\t"
         if (i === 1) {

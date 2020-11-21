@@ -424,13 +424,6 @@ closeSetting.addEventListener("click", closeSettingf);
 
 
 function resiez() {
-  if (window.innerWidth <= 666) {
-    document.querySelector("#btntop").innerHTML = '<i class="fas fa-long-arrow-alt-up"></i>'
-  }
-  else {
-    document.querySelector("#btntop").innerHTML = '<i class="fas fa-home"></i>'
-  };
-
   four.style.width = (setting.clientWidth - fourrefu.clientWidth) + "px";
   contenu.style.height = (setting.clientHeight - titreFour.offsetHeight - contenu.style.marginTop.match(/\d+/g).join('') * 2 - 2) + "px";
   if (window.innerWidth <= 666) {

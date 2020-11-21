@@ -234,7 +234,7 @@ function machinetyping() {
       quatre.play();
     } else {
       //console.log(plusune + " |   | " + lettremoinsune)
-      var result = ['un', 'deux', 'trois'][Math.floor(Math.random() * 3)];
+      var result = [un, deux, trois][Math.floor(Math.random() * 3)];
       result.play();
     }
     if (divprovisoir[x].innerHTML.length == longueur) {

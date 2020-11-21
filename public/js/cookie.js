@@ -14,8 +14,8 @@
     settingcook = "position:fixed; width:69%; background: rgba(244, 244, 244, 0.9); top: 15%;bottom: 15%; left: 15%; right: 15%; text-align: center;",
     horiz = "writing-mode: vertical-rl;",
     onglet = "border-radius: 20px 0 0 20px;",
-    cuisinag = "border: solid 1px;margin:15px; border-radius: 0 10px 10px 0;overflow: auto;direction: rtl;";
-
+    cuisinag = "border: solid 1px;margin:15px; border-radius: 0 10px 10px 0;overflow: auto;direction: rtl;width: calc( 100% - 70px ); height: calc( 100% - 70px );";
+    tittleFou = "padding: 10px 0; display: inline-block;"
   //document.write("<div id='out-click' style='"+out+"'></div>");
   //------------------------Click Out
   let newoutclick = document.createElement('div');
@@ -100,6 +100,7 @@
   four.setAttribute("id", "four")
   let titreFour = document.createElement('span');
   titreFour.setAttribute("id", "titreFour");
+  titreFour.setAttribute("style", tittleFou);
   let contenu = document.createElement('div');
   contenu.setAttribute("id", "contenu");
   contenu.setAttribute("style", cuisinag);

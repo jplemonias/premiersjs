@@ -32,16 +32,21 @@ function load() {
   if (window.innerWidth <= 666) {
     four.style.width = (setting.clientWidth - fourrefu.clientWidth) + "px";
     contenu.style.height = (setting.clientHeight - titreFour.offsetHeight - contenu.style.marginTop.match(/\d+/g).join('') * 2 - 2) + "px";
-    console.log(document.querySelector('#littleBtn').clientWidth)
+    
     document.querySelector("#btntop").innerHTML = '<i class="fas fa-long-arrow-alt-up"></i>'
+    if ( document.querySelector('#littleBtn').clientWidth < 71 ) {
+      console.log(document.querySelector('#littleBtn').clientWidth)
     var width = "width: calc( " + document.querySelector('#littleBtn').clientWidth + "px + 22px );"
+    } else {
+    console.log(document.querySelector('#littleBtn').clientWidth)
+      var width = "width: calc( " + document.querySelector('#littleBtn').clientWidth + "px + 0px );"
+    }
     document.querySelector('#little-menu').setAttribute('style', width)
     document.querySelector('#littleBtn').classList.add('displayN')
     document.querySelector('#littleBtn').classList.remove('hidden')
     cook.innerHTML = "&#127850;"
   }
   else {
-    console.log(document.querySelector('#littleBtn').clientWidth)
     document.querySelector("#btntop").innerHTML = '<i class="fas fa-home"></i>'
     cook.innerHTML = "cuisiner"
   }

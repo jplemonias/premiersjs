@@ -217,8 +217,10 @@ function machinetyping() {
     var plusune = divprovisoir[x].innerHTML + lettre;
     divprovisoir[x].innerHTML = plusune;
     spanedf[x].innerHTML = lettremoinsune;
+    var un = new Audio('public/audio/Tun.mp3');
     if (lettre === " ") {
       //console.log(" ");
+      un.play();
     } else if (lettre === "(" || lettre === ")") {
       //console.log("( )");
     } else if (lettre === ".") {

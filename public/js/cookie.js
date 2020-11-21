@@ -218,15 +218,23 @@ function machinetyping() {
     divprovisoir[x].innerHTML = plusune;
     spanedf[x].innerHTML = lettremoinsune;
     var un = new Audio('public/audio/Tun.mp3');
+    var deux = new Audio('public/audio/Tdeux.mp3');
+    var trois = new Audio('public/audio/Ttrois.mp3');
+    var quatre = new Audio('public/audio/Tun.mp3');
+    var quatre = new Audio('public/audio/Tquatre.mp3');
+    var cinq = new Audio('public/audio/Tcinq.mp3');
     if (lettre === " ") {
       //console.log(" ");
-      un.play();
+      cinq.play();
     } else if (lettre === "(" || lettre === ")") {
       //console.log("( )");
+      trois.play();
     } else if (lettre === ".") {
       //console.log(".");
+      quatre.play();
     } else {
       //console.log(plusune + " |   | " + lettremoinsune)
+      un.play();
     }
     if (divprovisoir[x].innerHTML.length == longueur) {
       x++;

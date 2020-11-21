@@ -432,7 +432,7 @@ function closeSettingf() {
 }
 cook.addEventListener("click", closeSettingf);
 closeSetting.addEventListener("click", closeSettingf);
-outclick.addEventListener('click', clickclear())
+
 /*
 function resiezCookies() {
   four.style.width = (setting.clientWidth - fourrefu.clientWidth) + "px";

@@ -204,7 +204,7 @@ function machinetyping() {
     tabletexte.push(spaned[i].innerHTML);
   };
   function changelettre() {
-    intunesec = setInterval(lafonction, 666);
+    intunesec = setInterval(lafonction, 333);
   };
   var x = 0;
   function lafonction() {

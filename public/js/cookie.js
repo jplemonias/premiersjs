@@ -137,8 +137,8 @@
   document.querySelector("#agreeSetting").innerHTML = "OK" + "\n";
 })();
 
-window.onresize = resiez
-window.onload = resiez
+//window.onresize = resiezCookies
+//window.onload = resiezCookies
 
 const bar = document.querySelector("#cookie-bar");
 const texte = document.querySelector("#txtbarcookie");
@@ -422,8 +422,8 @@ function closeSettingf() {
 cook.addEventListener("click", closeSettingf);
 closeSetting.addEventListener("click", closeSettingf);
 
-
-function resiez() {
+/*
+function resiezCookies() {
   four.style.width = (setting.clientWidth - fourrefu.clientWidth) + "px";
   contenu.style.height = (setting.clientHeight - titreFour.offsetHeight - contenu.style.marginTop.match(/\d+/g).join('') * 2 - 2) + "px";
   if (window.innerWidth <= 666) {
@@ -441,7 +441,7 @@ function resiez() {
     cook.style.top = "0px";
   }
 }
-
+*/
 var test = navigator.userAgent.split(/\(|\)/)
 var longueurtt = test.length - 1;
 for (let i = 0; i < test.length; i++) {
